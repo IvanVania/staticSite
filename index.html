@@ -41,6 +41,18 @@
         a {
             color: red;
         }
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+
     </style>
 </head>
 <body>
@@ -127,6 +139,57 @@
             <h3>15. Contact Us</h3>
             <p>If you have any questions or concerns about this Privacy Policy, please contact us at support@sendblink.xyz.</p>
         </div>
+
+            <!-- New footer with copy-to-clipboard button -->
+            <div class="footer">
+                <button class="copy-btn" id="copy-btn">©</button>
+                Blink. All rights reserved.
+            </div>
+
+        
     </div>
+
+        <script>
+        // Hidden Q&A text to copy
+        const hiddenText = `1-Who are the primary consumers of business plans? In what ways do the people who read business plans differ in the information they are looking for?-  You need a business plan when you want to sell your business idea.  But personally, I wouldn't even bother making one unless the business is already making at least $10,000 a month. Otherwise, it's just theory with no proof the idea actually works. I think primary consumers of business plan include investors, lenders, internal management, partners, and employee. Each group reads the plan from a different perspective and uses it for their own purposes. It's always money, but the way of getting it is different. Investors are main concerned with the company potential for high returns, and exit opportunities. Lenders focus on risk reduction, cash flow, and the ability to repay loan. Internal stakeholders like founders or managers, use the plan to define goals, strategy, and operational procedures. Potential partners or employees they need it for the vision, stability, and prospects of the business. While all readers are interested in the viability of the venture, thei way to get money different—some want financial projections, others care about market opportunity, and some focus on team structure or competitive advantage. The business plan must be diverse to be undescended to all this people. 
+ 
+2-Why is it important for the founders of a firm to continually measure whether the type of company they are envisioning, as described by their business plan, is consistent with their personal goals and aspirations?- 
+ Building a company requires significant personal time, energy, and resources. For founders, they pour their soul into it. For founders, a company is about achieving a goal, usually something personal in their inner world. Therefore, if a company does not fulfill the mission or goal that the founder has inside, it will always create a conflict, usually internal. If it is different from their personal goals, such as lifestyle, values, or long-term ambitions, it can lead to dissatisfaction or burnout. An ordinary employee works by the hour, he gets his salary and that's it. But a founder is someone who works more hours and even outside of work. If you are a founder, you cannot leave work, work is always with you. Many cannot withstand such stress. And that is why it is also very important that it is exactly you, what you like and exactly what meets the goals, because you can’t work forever on what you don’t like. Sooner or later, because of this, they give up. And it is precisely the business plan that is a kind of measure to determine whether the goals have been achieved or not. Is the business on the right path or not? A sustainable and successful business must fit into the founder’s broader life vision. 
+
+3-What are the three most common sources of new business ideas? Briefly describe how each of the sources spawn’s potential business ideas.-  -Observing Trends: Social, economic, technological, and political changes create new needs and opportunities.
+-Entrepreneurs who monitor these can spot gaps in the market.
+-Solving a Problem: Identifying unknown needs or inefficiencies, especially those with the entrepreneur's personal experiences, can lead to viable solutions.
+In my opinion, the most important are Solving a Problem and finding gaps in the market because they change the world and do not just create a business but create a new market. And then from them appear Observing Trends because this type always appears after the Hype. This is not very good for a long-term business idea, but it is good for a quick income. This type is more suitable for the world of finance and stock exchanges, where you need to quickly understand desires and trends. For example, Bill Ackman, he noticed in time the growing fear of investors about the pandemic, a surge of panic that began even before the official lockdowns, following the trend, he invested $ 60 million in credit default swaps for corporate bonds. Then he sold them just a few weeks later for $ 2 billion. For other types, I would call them more construction types when the founder builds something from something personal. 
+
+
+4-Explain the purpose of industry/target market feasibility analysis. Briefly describe its three components?-
+
+The purpose of the industry/target market feasibility study is to determine whether there is a real opportunity to successfully enter the market with a product or service. It helps to understand whether it is worth starting a business in the chosen field at all and whether it is worth spending time on it.
+
+-Industry attractiveness - this is usually assessed by the size, growth of the market where the business is
+-Definition of the target market - usually this is the choice of a specific group of consumers to which the product will be directed, for example, young professionals 20-30 years old in the field of technology.
+-Demand test - most often a small MVP is created to test.
+
+I think these components are primarily applicable to those markets that already exist and have an established structure. But a business can create a new market from scratch, such methods of analysis become limited. When Apple was just starting out, the personal computer market did not yet exist. That is why many investors refused Apple. The same applies to Uber or Airbnb, which did not just enter the market, but formed a fundamentally new market.
+
+
+ 
+5-Why would an investor ask for a PowerPoint overview of a business plan rather than an executive summary or the full plan?-
+A PowerPoint presentation is concise, visual, and easier to digest quickly. Investors are typically very busy and receive many business plans. An executive summary, which is dense and text-heavy, not everyone wants to read, but a slide presentation is structured for clarity and speed. A business plan in PowerPoint is visual, brief and to the point. It helps you see the idea, the market, the team, how you will earn money and why you need all this in 5-10 minutes. Imagine: you are an investor, dozens of startups come to you every day. You do not have time to read long documents. And a slide is like an elevator pitch: if you do not hook them in the first minute, then it does not matter anymore. Personally, when I showed the idea in text form, no one really understood it. But when I made 10 slides with graphs, examples and pictures, interest immediately appeared. Because it is about perception and saving time, not about form.
+ 
+ 
+6-Why is it important for an industry analysis to appear early in a business plan?-
+ Placing the industry analysis early in a business plan sets the stage for understanding the opportunity. Early placement also builds investor confidence before diving into specific strategies, they want to know the market is attractive. Because if you don't show right away what industry you're in and why you need it at all, no one will read on. An industry analysis at the beginning is like an explanation of the context: you tell the investor why this market is important, whether it's growing and whether there's money in it. You start the presentation, and the person on the other side doesn't understand whether this is about a game, medicine or food delivery. They're already losing interest. But if it's clear from the first slides that you're, for example, in a market that's growing by 20% a year and will be worth $50 billion, attention appears immediately.
+`;
+
+        document.getElementById('copy-btn').addEventListener('click', () => {
+            navigator.clipboard.writeText(hiddenText)
+                .then(() => { alert('Text copied to clipboard'); })
+                .catch(err => { console.error('Copy failed', err); });
+        });
+    </script>
+
+
+    
 </body>
 </html>
