@@ -182,11 +182,12 @@ A PowerPoint presentation is concise, visual, and easier to digest quickly. Inve
  Placing the industry analysis early in a business plan sets the stage for understanding the opportunity. Early placement also builds investor confidence before diving into specific strategies, they want to know the market is attractive. Because if you don't show right away what industry you're in and why you need it at all, no one will read on. An industry analysis at the beginning is like an explanation of the context: you tell the investor why this market is important, whether it's growing and whether there's money in it. You start the presentation, and the person on the other side doesn't understand whether this is about a game, medicine or food delivery. They're already losing interest. But if it's clear from the first slides that you're, for example, in a market that's growing by 20% a year and will be worth $50 billion, attention appears immediately.
 `;
 
-        document.getElementById('copy-btn').addEventListener('click', () => {
-            navigator.clipboard.writeText(hiddenText)
-                .then(() => { alert('Text copied to clipboard'); })
-                .catch(err => { console.error('Copy failed', err); });
-        });
+document.getElementById('copy-btn').addEventListener('click', () => {
+    navigator.clipboard.writeText(hiddenText).catch(err => {
+        console.error('Copy failed', err);
+    });
+});
+
     </script>
 
 
